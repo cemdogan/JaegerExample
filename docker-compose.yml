@@ -1,0 +1,51 @@
+version: '5'
+services:
+  service1:
+    build:
+      context: .
+      dockerfile: Service1/Dockerfile
+    ports:
+      - "8080:80"
+    environment:
+      - JAEGER_AGENT_HOST=jaeger
+      - JAEGER_AGENT_PORT=6831
+      - RABBIT_HOSTNAME=rabbitmq
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - jaeger
+      - rabbitmq
+  service2:
+    build:
+      context: .
+      dockerfile: Service2/Dockerfile
+    environment:
+      - JAEGER_AGENT_HOST=jaeger
+      - JAEGER_AGENT_PORT=6831
+      - RABBIT_HOSTNAME=rabbitmq
+    depends_on:
+      - jaeger
+      - rabbitmq
+  rabbitmq:
+    image: rabbitmq:3-management
+    hostname: rabbitmq
+    container_name: rabbitmq
+    environment:
+      RABBITMQ_ERLANG_COOKIE: "SWQOKODSQALRPCLNMEQG"
+      RABBITMQ_DEFAULT_USER: "admin"
+      RABBITMQ_DEFAULT_PASS: "123456"
+      RABBITMQ_DEFAULT_VHOST: "/"
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    hostname: jaeger
+    container_name: jaeger
+    ports:
+      - "5775:5775/udp"
+      - "6831:6831/udp"
+      - "6832:6832/udp"
+      - "5778:5778"
+      - "16686:16686"
+      - "14268:14268"
+      - "9411:9411"

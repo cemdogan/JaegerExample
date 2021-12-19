@@ -1,0 +1,159 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/cem.dogan/Documents/side-projects/JaegerExample/Service2/Service2.csproj": {}
+  },
+  "projects": {
+    "/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/Contracts.csproj",
+        "projectName": "Contracts",
+        "projectPath": "/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/Contracts.csproj",
+        "packagesPath": "/Users/cem.dogan/.nuget/packages/",
+        "outputPath": "/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/cem.dogan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/cem.dogan/Documents/side-projects/JaegerExample/Service2/Service2.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/cem.dogan/Documents/side-projects/JaegerExample/Service2/Service2.csproj",
+        "projectName": "Service2",
+        "projectPath": "/Users/cem.dogan/Documents/side-projects/JaegerExample/Service2/Service2.csproj",
+        "packagesPath": "/Users/cem.dogan/.nuget/packages/",
+        "outputPath": "/Users/cem.dogan/Documents/side-projects/JaegerExample/Service2/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/cem.dogan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/Contracts.csproj": {
+                "projectPath": "/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Jaeger": {
+              "target": "Package",
+              "version": "[1.0.3, )"
+            },
+            "MetroBus": {
+              "target": "Package",
+              "version": "[2.0.6, )"
+            },
+            "MetroBus.Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.6, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "OpenTracing.Contrib.NetCore": {
+              "target": "Package",
+              "version": "[0.8.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

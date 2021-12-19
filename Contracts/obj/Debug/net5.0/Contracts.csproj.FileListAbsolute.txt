@@ -1,0 +1,12 @@
+/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/bin/Debug/net5.0/Contracts.deps.json
+/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/bin/Debug/net5.0/Contracts.dll
+/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/bin/Debug/net5.0/ref/Contracts.dll
+/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/bin/Debug/net5.0/Contracts.pdb
+/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/obj/Debug/net5.0/Contracts.csprojAssemblyReference.cache
+/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/obj/Debug/net5.0/Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/obj/Debug/net5.0/Contracts.AssemblyInfoInputs.cache
+/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/obj/Debug/net5.0/Contracts.AssemblyInfo.cs
+/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/obj/Debug/net5.0/Contracts.csproj.CoreCompileInputs.cache
+/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/obj/Debug/net5.0/Contracts.dll
+/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/obj/Debug/net5.0/ref/Contracts.dll
+/Users/cem.dogan/Documents/side-projects/JaegerExample/Contracts/obj/Debug/net5.0/Contracts.pdb
